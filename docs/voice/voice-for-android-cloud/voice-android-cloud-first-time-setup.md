@@ -67,4 +67,4 @@ A minimum set of permissions are needed for the app to use the Sinch SDK. These 
 
 To verify that the manifest has the necessary permissions the `sinchClient.checkManifest()` method can be used. This method should be called before starting the client and will throw an `MissingPermissionException` exception if the manifest isn’t setup correctly. `sinchClient.checkManifest()` should only be called during development. When the application is ready for release the method call can safely be removed.
 
-_Note:_ This method takes into consideration the capabilities which were enabled for the app (for example, calling, respecting native calls, and so on). Call `sinchClient.checkManifest()` after the setup but before the start of the SinchClient.
+_Note:_ This method takes into consideration the features which were enabled for the app (for example, calling, respecting native calls, and so on). Call `sinchClient.checkManifest()` after the setup but before the start of the SinchClient.
